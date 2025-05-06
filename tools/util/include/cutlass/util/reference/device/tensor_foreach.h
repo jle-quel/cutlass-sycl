@@ -136,7 +136,7 @@ struct BlockForEach {
       block_size = 128;
       // Ensure global range doesn't overflow int
       // grid_size = std::min(capacity, static_cast<size_t>(std::numeric_limits<int>::max())) / block_size;
-      grid_size = 64;
+      grid_size = 64
 #else
       // if grid_size or block_size are zero, query occupancy using the CUDA Occupancy API
       cudaError_t result = cudaOccupancyMaxPotentialBlockSize(
