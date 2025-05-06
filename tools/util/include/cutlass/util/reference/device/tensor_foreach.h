@@ -35,6 +35,8 @@
 #include "cutlass/cutlass.h"
 #include "cutlass/util/reference/device/kernel/tensor_foreach.h"
 
+bar
+
 namespace cutlass  {
 namespace reference {
 namespace device {
@@ -129,6 +131,8 @@ struct BlockForEach {
     int grid_size = 0,
     int block_size = 0,
     cudaStream_t stream = nullptr) {
+
+      foo
 
     if (!grid_size || !block_size) {
 #if defined (CUTLASS_ENABLE_SYCL)
